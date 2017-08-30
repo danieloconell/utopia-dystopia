@@ -1,8 +1,12 @@
 *{
-   color: #000000; font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+   color: #FFFFFF; font-family: Futura, "Trebuchet MS", Arial, sans-serif;
    font-weight: bold;
     /* overflow-x: hidden; 
     overflow-y: auto; */
+}
+
+body {
+  background-color: #000000;
 }
 
 .transform1, .transform2 {
@@ -11,8 +15,12 @@
 
 .transform-active {
   background-color: #45CEE0;
-  height: 800px;
-  width: 1000px;
+  height: 750px;
+  width: 850px;
+}
+
+h1 {
+  color: white;
 }
 
 div {
