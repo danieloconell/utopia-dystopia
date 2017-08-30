@@ -2,23 +2,25 @@
 <html>
   <head>
     <meta charset="UTF-8">
-     <link rel="stylesheet" type="text/css" href="animate.css">
+    <link rel="stylesheet" type="text/css" href="animate.css">
     <link rel="stylesheet" type="text/css" href="hover.css">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="main.js"></script>
     <title>Utopia Dystopia</title>
   </head>
   <body>
   <div>
-  	<a class="hvr-grow">
+  	<a  class="hvr-grow">
   	<div style="width: 16px; height: 20px; float: left"></div>
-  	<div class="right" href="google.com"></div>
+  	<div id="left" class="transform1 left animated slideInLeft" href="#"></div>
   	</a>
   	<div style="width: 513px; height: 10px; float: right">
-  		<h1 style="text-align: center">Utopia Dystopia</h1>
+  		<h1 class="animated slideInDown" style="text-align: center">Utopia Dystopia</h1>
   	</div>
   </div>
-  <a href="google.com" style="text-decoration:none" class="hvr-grow">
-    <div class="left"></div>
+  <a href="#" style="text-decoration:none" class="hvr-grow">
+    <div id="right" class="transform2 right animated slideInRight"></div>
   </a>
   </body>
 </html>
