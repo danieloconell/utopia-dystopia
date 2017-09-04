@@ -56,6 +56,17 @@ div {
   }
 }
 
+#utopia_text{
+  font-family: 'Arvo', serif;
+  font-size: 7vh;
+}
+
+#dystopia_text{
+  font-family: 'Libre Barcode 39 Text', cursive;
+  font-size: 7vh;
+}
+
+
 img.world
 {
     -webkit-animation-name:             rotate; 
