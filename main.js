@@ -6,13 +6,13 @@ function change_page(page){
 
 $( "#left" ).click(function() {
 
-  setTimeout(function(){ document.location.href = "utopia.html"}, 2000)
+document.location.href = "utopia.html"
     
 });
 
 $( "#right" ).click(function() {
 
-  setTimeout(function(){ document.location.href = "dystopia.html"}, 2000)
+document.location.href = "dystopia.html"
 
 });
 });
