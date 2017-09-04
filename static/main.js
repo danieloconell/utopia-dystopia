@@ -1,8 +1,5 @@
 $( document ).ready(function() {
 
-function change_page(page){
-    document.location.href = page+".html"
-}
 
 $( "#left" ).click(function() {
 
