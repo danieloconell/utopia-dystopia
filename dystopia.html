@@ -2,9 +2,67 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>title</title>
+    <title>Dystopia</title>
   </head>
-  <body style="background-color: rgb(244, 65, 65)">
+  <link href="https://fonts.googleapis.com/css?family=Arvo|Libre+Barcode+39+Text" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  
+  <style>
+  h1{
+font-family: 'Libre Barcode 39 Text', cursive;
+  }  
+  p{
+  font-size: 3vh;
+    margin: 4vh;
+    font-family: 'Roboto', sans-serif;
+ 
+  }
+  button{
+    width: 10vh;
+    height: 5vh;
+    background-color: lightgrey;
+    border: none;
+    color: #444444;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+  </style>
+  <script type="text/javascript" src="jquery-3.2.1.min.js"></script>  
+  <body style="background-color: #f1444b">
+  
+    <h1 id="title" style="font-size: 20vh; text-align: right;" >Title</h1>
+  <p id="content">text</p>
+
+  <button id="next">Next</button>
+  <button id="back">Back</button>
   
   </body>
+  <script type="text/javascript">
+  title = []
+  content = []
+  counter = 0
+  $("#title").text(title[counter])
+  $("#content").text(content[counter])
+
+
+  $( "#next" ).click(function() {
+    counter += 1
+
+    $("#title").text(title[counter])
+    $("#content").text(content[counter])
+  });
+
+  $( "#back" ).click(function() {
+    counter -= 1
+
+    $("#title").text(title[counter])
+    $("#content").text(content[counter])
+  });
+
+  </script>
 </html>
