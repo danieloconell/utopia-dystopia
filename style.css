@@ -46,3 +46,21 @@ div {
   border-bottom-left-radius: 960px;
   border-top-left-radius: 960px;
 }
+
+@-webkit-keyframes rotate {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to { 
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+img.world
+{
+    -webkit-animation-name:             rotate; 
+    -webkit-animation-duration:         100s; 
+    -webkit-animation-iteration-count:  infinite;
+    -webkit-animation-timing-function: linear;
+    height: 80vh;
+}
