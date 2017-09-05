@@ -6,18 +6,24 @@
   </head>
   <link href="https://fonts.googleapis.com/css?family=Arvo|Libre+Barcode+39+Text" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-  
+  <script type="text/javascript" src="static/jquery-3.2.1.min.js"></script>  
   <style>
+  * {
+    background-color: #448ccb;
+  }
   h1{
-font-family: 'Arvo', cursive;
+    font-family: 'Arvo', cursive;
+    color: white;
   }  
   p{
-  font-size: 3vh;
+    font-size: 3vh;
     margin: 4vh;
     font-family: 'Roboto', sans-serif;
+    color: white;
  
   }
   button{
+    color: white;
     width: 10vh;
     height: 5vh;
     background-color: lightgrey;
@@ -32,42 +38,41 @@ font-family: 'Arvo', cursive;
     cursor: pointer;
   }
   </style>
-  <script type="text/javascript" src="static/jquery-3.2.1.min.js"></script>  
-  <body style="background-color: #448ccb">
+  <body>
   
-    <h1 id="title" style="font-size: 20vh; text-align: right;" >Title</h1>
+  <h1 id="title" style="font-size: 20vh; text-align: right;" >Title</h1>
   <p id="content">text</p>
 
-  <button id="next">Next</button>
   <button id="back">Back</button>
+  <button id="next">Next</button>
   
   </body>
   <script type="text/javascript">
-title = ["Basic Info", 
-"Transport",
-"Social", 
-"Education", 
-"Government", 
-"Entertainment", 
-"Religion", 
-"Law Enforcement"]
-content = ["Roshaydor, Population: 50 million", 
-"Transport is done via an app this then lets the transport system know people wish to go somewhere. It then works out the most efficient route using trains and the passengers go to the nearest station and are arrive at their destination. The power used for this transportation syste isobtained through renewable sources.", "In this society people strive to contribute as meaningfully as they can by contributing via a business, research. People are given freedom to express their individuality and culture through their possessions. People live a life in which they are doing community activities some of which to help less fortunate in their community, this provides a sense of belonging and helping. Activities such as smoking, alcohol, drigs are illegal and people who participate in those activities are looked down upon. Society is unified in that they are all very proud of who they are, because they are educated people who know their place in the universe and realise the significance of this race, because life is so special. Family is not just the people you live with but the people who help you grow mentally and physically throughout their life.", 
+  title = ["Basic Info", 
+           "Transport",
+           "Social", 
+           "Education", 
+           "Government", 
+           "Entertainment", 
+           "Religion", 
+           "Law"]
+content = ["Name: Roshaydor, Population: 50 million", 
+           "Transport is done via an app this then lets the transport system know people wish to go somewhere. It then works out the most efficient route using trains and the passengers go to the nearest station and are arrive at their destination. The power used for this transportation syste isobtained through renewable sources.", "In this society people strive to contribute as meaningfully as they can by contributing via a business, research. People are given freedom to express their individuality and culture through their possessions. People live a life in which they are doing community activities some of which to help less fortunate in their community, this provides a sense of belonging and helping. Activities such as smoking, alcohol, drigs are illegal and people who participate in those activities are looked down upon. Society is unified in that they are all very proud of who they are, because they are educated people who know their place in the universe and realise the significance of this race, because life is so special. Family is not just the people you live with but the people who help you grow mentally and physically throughout their life.", 
 
-"Education is irrelevant to money. Meaning that someone who is not in a good financial position's education will not be disadvantaged. This allows for purely academics to decide intelligence. Tests at schools are ensured to be on relevant issues for the students and the school is constantly updating new methods to their teaching styles to further engage students.", 
+           "Education is irrelevant to money. Meaning that someone who is not in a good financial position's education will not be disadvantaged. This allows for purely academics to decide intelligence. Tests at schools are ensured to be on relevant issues for the students and the school is constantly updating new methods to their teaching styles to further engage students.", 
 
-"The government is directly involved in making it's living conditions for it's people's better. One of the ways it does this is by having the right's of all it's citizens. These are things that once you become a citizen you have access to., although some of your right's may be removed if you are in debt and unable to pay back. Government also closely regulates companies in all aspects, to ensure employees are not exploited.", 
+           "The government is directly involved in making it's living conditions for it's people's better. One of the ways it does this is by having the right's of all it's citizens. These are things that once you become a citizen you have access to., although some of your right's may be removed if you are in debt and unable to pay back. Government also closely regulates companies in all aspects, to ensure employees are not exploited.", 
 
-"In this utpoia people still seek entertainment so that they are able to funciton at their peek ability. Entertainment comes in many forms such as: sport, meditation and hobbies. These forms of entertainment", 
+           "In this utpoia people still seek entertainment so that they are able to funciton at their peek ability. Entertainment comes in many forms such as: sport, meditation and hobbies. These forms of entertainment", 
 
-"The magority of people in this society do not follow a religion but those who do wish to follow a religion are still allowed to practice their religion but not to proclaim their religion better than another publicly. It is illegal to publicly announce one religion better than others because society has collectively agreed that religion can cause too many wars over very little and many people die.", 
+           "The magority of people in this society do not follow a religion but those who do wish to follow a religion are still allowed to practice their religion but not to proclaim their religion better than another publicly. It is illegal to publicly announce one religion better than others because society has collectively agreed that religion can cause too many wars over very little and many people die.", 
 
-"Police employ peaceful and negotiative tactics when negotiating with people they also help provide communities with the knowledge they are safe. They provide a sense of security by having a large portion of people cycling around the area, this way if there was a crime to committed in an area the chances of a police officer being present are high and other officers will arrive to support. This removes the stereotype of police officers who are unfit and do nothing."]
+           "Police employ peaceful and negotiative tactics when negotiating with people they also help provide communities with the knowledge they are safe. They provide a sense of security by having a large portion of people cycling around the area, this way if there was a crime to committed in an area the chances of a police officer being present are high and other officers will arrive to support. This removes the stereotype of police officers who are unfit and do nothing."]
 
-counter = 0
+  counter = 0
+
   $("#title").text(title[counter])
   $("#content").text(content[counter])
-
 
   $( "#next" ).on("click keydown", function (e)  {
     counter += 1
@@ -87,6 +92,5 @@ counter = 0
     $("#title").text(title[counter])
     $("#content").text(content[counter])
   });
-
   </script>
 </html>

@@ -6,13 +6,18 @@
   </head>
   <link href="https://fonts.googleapis.com/css?family=Arvo|Libre+Barcode+39+Text" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-  
+  <script type="text/javascript" src="static/jquery-3.2.1.min.js"></script>  
   <style>
+  * {
+    background-color: #f1444b;
+  }
   h1{
-font-family: 'Libre Barcode 39 Text', cursive;
+    font-family: 'Libre Barcode 39 Text', cursive;
+    font-size: 20vh;
+    text-align: right;
   }  
   p{
-  font-size: 3vh;
+    font-size: 3vh;
     margin: 4vh;
     font-family: 'Roboto', sans-serif;
  
@@ -32,10 +37,9 @@ font-family: 'Libre Barcode 39 Text', cursive;
     cursor: pointer;
   }
   </style>
-  <script type="text/javascript" src="static/jquery-3.2.1.min.js"></script>  
-  <body style="background-color: #f1444b">
+  <body>
   
-    <h1 id="title" style="font-size: 20vh; text-align: right;" >Title</h1>
+  <h1 id="title">Title</h1>
   <p id="content">text</p>
 
   <button id="back">Back</button>
@@ -44,32 +48,32 @@ font-family: 'Libre Barcode 39 Text', cursive;
   </body>
   <script type="text/javascript">
   title = ["Basic Info",
-  "Transportation",
-  "Social",
-  "Education",
-"Government",
-"Entertainment",
-"Religion",
-"Law Enforcement"]
-  content = ["Grimalor, Population 10 million",
-  "Transport is done by people and however they get to another place however they can, which may be driving their vehicle through houses and running over other people for the fun of it. This system is very inefficient and there are very few roads and people drive thei vehicles on whatever they can. All of these methods of transports are fueled by oils.",
+           "Transportation",
+           "Social",
+           "Education",
+           "Government",
+           "Entertainment",
+           "Religion",
+           "Law"]
+  content = ["Name: Grimalor, Population 10 million",
+             "Transport is done by people and however they get to another place however they can, which may be driving their vehicle through houses and running over other people for the fun of it. This system is very inefficient and there are very few roads and people drive thei vehicles on whatever they can. All of these methods of transports are fueled by oils.",
   
-  "People of this society are very self centered and make actions based on whatever they believe is will help them the most. They are very shortsighted as well when making decisions, this reults in the societyt not uniting on issues and doing whatever suits them. This has led to many wars and huge amounts of people dieing which has led to the small population.",
+             "People of this society are very self centered and make actions based on whatever they believe is will help them the most. They are very shortsighted as well when making decisions, this reults in the societyt not uniting on issues and doing whatever suits them. This has led to many wars and huge amounts of people dieing which has led to the small population.",
 
-"Education is something that only very few have access to because of the lack of money. This results in the poor of the society to be uneducated and",
+             "Education is something that only very few have access to because of the lack of money. This results in the poor of the society to be uneducated and",
 
-"The government is corrupt and is not actively involved in regulating copanies and their actions, thus resulting in a society that does not function. People in power are constantly bribed and receive large amounts of money for passing a blind eye. There are major groups in this world that go around terrorising people and enforcing their own rules.",
+             "The government is corrupt and is not actively involved in regulating copanies and their actions, thus resulting in a society that does not function. People in power are constantly bribed and receive large amounts of money for passing a blind eye. There are major groups in this world that go around terrorising people and enforcing their own rules.",
 
-"In this society seek entertainment through methods that are imoral such as wathcing other humans being slaughtered. This results in large amounts of people living in fear of being slaughtered for someone else's entertainment.",
+             "In this society seek entertainment through methods that are imoral such as wathcing other humans being slaughtered. This results in large amounts of people living in fear of being slaughtered for someone else's entertainment.",
 
-"There is only one religon and it is enforced by law. People are judged by how devoted theyre to their faith",
+             "There is only one religon and it is enforced by law. People are judged by how devoted theyre to their faith",
 
-"There is a law enforcement by they as well as the government are constantly bribed by the large powerful groups. The lack of law enforcement enures that people do not have a sense of security and they do not"
-]
+             "There is a law enforcement by they as well as the government are constantly bribed by the large powerful groups. The lack of law enforcement enures that people do not have a sense of security and they do not"]
+
   counter = 0
+
   $("#title").text(title[counter])
   $("#content").text(content[counter])
-
 
   $( "#next" ).click(function() {
     counter += 1
@@ -89,6 +93,5 @@ font-family: 'Libre Barcode 39 Text', cursive;
     $("#title").text(title[counter])
     $("#content").text(content[counter])
   });
-
   </script>
 </html>
